@@ -1,0 +1,114 @@
+@import "styles/utils";
+
+.previewCard {
+  background: #1B1937;
+  box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
+  border-radius: 8px;
+  overflow: hidden;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+
+  @include media(">desktop") {
+    max-width: 1110px;
+    flex-direction: row-reverse;
+  }
+
+  .cardHeader {
+    position: relative;
+    display: flex;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: #AB5CDB;
+      mix-blend-mode: multiply;
+      opacity: 0.75;
+      z-index: 1;
+    }
+
+    .cardHeaderImage {
+      width: 100%;
+      height: 100%;
+      min-height: 240px;
+
+      @include media(">desktop") {
+        width: initial;
+        min-width: 540px;
+        min-height: initial;
+      }
+    }
+  }
+
+  .cardBody {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 32px 32px;
+    text-align: center;
+
+    @include media(">desktop") {
+      padding: 71px 72px 59px;
+      text-align: left;
+      //min-width: 570px;
+    }
+
+    .title {
+      margin-bottom: 16px;
+
+      @include media(">tablet") {
+        margin-bottom: 25px;
+      }
+
+      strong {
+        color: #AB5CDB;
+      }
+    }
+
+    .description {
+      opacity: 0.75;
+      margin-bottom: 40px;
+      flex: 1;
+    }
+
+    .statsContainer {
+      display: grid;
+      grid-gap: 24px;
+
+      @include media(">desktop") {
+        grid-gap: 63px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .statsWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include media(">desktop") {
+        align-items: flex-start;
+      }
+
+      .statsNumberText {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 2px;
+      }
+
+      .statsNameText {
+        font-family: 'Lexend Deca';
+        font-size: 12px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        opacity: 0.6;
+      }
+    }
+  }
+}
