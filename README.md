@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Stats Preview Card using NextJS](https://www.frontendmentor.io/solutions/order-summary-card-UXxFyH-14)
-- Live Site URL: [Stats Preview Card Component](https://order-summary-component-hanseonglee.vercel.app)
+- Solution URL: [Stats Preview Card using NextJS](https://www.frontendmentor.io/solutions/stats-preview-card-using-nextjs-NGJC6WmFi)
+- Live Site URL: [Stats Preview Card Component](https://stats-preview-card-component-hanseonglee.vercel.app)
 
 ## My process
 
