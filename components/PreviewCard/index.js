@@ -42,7 +42,7 @@ const PreviewCard = () => {
                     </div>
                     <div className={styles.statsWrapper}>
                         <div className={styles.statsNumberText}>
-                            12m+
+                            12M+
                         </div>
                         <div className={styles.statsNameText}>
                             queries
