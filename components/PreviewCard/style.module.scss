@@ -54,7 +54,6 @@
     @include media(">desktop") {
       padding: 71px 72px 59px;
       text-align: left;
-      //min-width: 570px;
     }
 
     .title {
@@ -73,6 +72,10 @@
       opacity: 0.75;
       margin-bottom: 40px;
       flex: 1;
+
+      @include media(">desktop") {
+        max-width: 374px;
+      }
     }
 
     .statsContainer {
@@ -80,8 +83,9 @@
       grid-gap: 24px;
 
       @include media(">desktop") {
-        grid-gap: 63px;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        justify-content: space-between;
+        max-width: 350px;
       }
     }
 
